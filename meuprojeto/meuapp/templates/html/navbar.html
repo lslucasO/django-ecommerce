@@ -4,8 +4,9 @@
 <p>Seja bem vindo e aproveite os nosso serviços!</p>
 <nav>
     <ul style="display: flex; gap: 30px; list-style: none;">
+        <a href="{% url 'index' %}">Home</a>
         {% for room in rooms %}
-            <li><a href="/{{room.name}}">{{room.name}}</a></li>
+            <li><a href="/{{room.name}}">{{room.name.capitalize}}</a></li>
         {% endfor %}
     </ul>
 </nav>
