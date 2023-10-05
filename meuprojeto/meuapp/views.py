@@ -5,7 +5,8 @@ rooms = [
     {'id': 2, 'name': 'produtos'},
     {'id': 3, 'name': 'ofertas'},
     {'id': 4, 'name': 'carrinho'},
-    {'id': 5, 'name': 'contato'}
+    {'id': 5, 'name': 'contato'},
+    {'id': 6, 'name': 'associados'}
 ]
 
 def index(request):
@@ -16,3 +17,6 @@ def produtos(request):
 
 def ofertas(request):
     return render(request, 'html/ofertas.html', {'rooms': rooms})
+
+def associados(request):
+    return render(request, 'html/associados.html', {'rooms': rooms})   
