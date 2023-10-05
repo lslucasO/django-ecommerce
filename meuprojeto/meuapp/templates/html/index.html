@@ -6,9 +6,18 @@
     <title>Mercadinho</title>
 </head>
 <body>
-    <header>{% include 'html/navbar.html' %}</header>
+    {% include 'html/navbar.html' %}
     <main>
         <h2>Pagina Principal</h2>
+        <form action="{% url 'associados' %}" method="post">
+            {% csrf_token %}
+            <div class="associado-container">
+                <h2>Virar Associado do Seu Zé</h3>
+                    <input name="cpf" type="number" placeholder="CPF">
+                    <input name="email"  type="text" placeholder="EMAIL">
+                <button style="cursor: pointer;">Confirmar</button>
+            </div>
+        </form>
     </main>
     <footer>
 

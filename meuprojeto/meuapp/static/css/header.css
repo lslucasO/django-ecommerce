@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    display: flex;
+    gap: 40px; 
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0000EE;
+}
+
+nav{
+    margin: auto;
+}
+
+.header-container{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+

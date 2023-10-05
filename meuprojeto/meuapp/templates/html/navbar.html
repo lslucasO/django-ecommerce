@@ -1,13 +1,25 @@
 {% load static %}
-<img src="{% static 'img/mercado-logo.jpg' %}" alt="">
-<h1>Mercadinho do Seu Zé</h1>
-<p>Seja bem vindo e aproveite os nosso serviços!</p>
-<nav>
-    <ul style="display: flex; gap: 30px; list-style: none;">
-        <a href="{% url 'index' %}">Home</a>
-        {% for room in rooms %}
-            <li><a href="/{{room.name}}">{{room.name.capitalize}}</a></li>
-        {% endfor %}
-    </ul>
-</nav>
-<hr>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="{% static 'img/mercado-logo.jpg' %}" alt="">
+            <nav class="links-container">
+                <ul>
+                    <a class="link" href="{% url 'index' %}">Home</a>
+                    {% for room in rooms %}
+                        <li><a class="link" href="/{{room.name}}">{{room.name.capitalize}}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

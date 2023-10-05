@@ -1,10 +1,6 @@
 {% include 'html/navbar.html' %}
-<form action="{% url 'index' %}">
-    {% csrf_token %}
-    <div class="associado-container">
-        <h2>Virar Associado do Seu Zé</h3>
-            <input name="cpf" type="number" placeholder="CPF">
-            <input name="email"  type="text" placeholder="EMAIL">
-        <button style="cursor: pointer;">Confirmar</button>
-    </div>
-</form>
+<ol>
+    {% for associado in associados %}
+    <li>{{associado.cpf}} - {{associado.email}}</li>
+    {% endfor %}
+</ol>
