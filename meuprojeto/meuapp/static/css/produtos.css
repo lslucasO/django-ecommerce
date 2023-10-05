@@ -1,0 +1,56 @@
+main{
+    background-color: #e7e7e76c;
+    padding: 20px;
+    height: 800px;
+}
+
+button{
+    margin-top: 40px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #bb1523c4;
+    color: white;
+    border: none;
+    transition: transform 0.5s;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+.produto{
+    color: #595959;
+}
+
+.produto-container{
+    display: flex; 
+    padding: 20px;   
+    width: 300px; height: 400px;
+}
+
+.card-produto{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 260px;
+    height: 400px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.364);
+}
+
+.img-produto{
+    width: 250px; 
+    height: 220px;
+}
+
+.preco{
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #10757A;
+    font-weight: bold;
+}

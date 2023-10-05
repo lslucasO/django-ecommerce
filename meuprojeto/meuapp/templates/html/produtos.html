@@ -1,14 +1,26 @@
 {% include 'html/navbar.html' %}
 {% load static %}
-<h2>Página Produtos</h2>
-<div style="display: flex; padding: 20px;  background-color: white; width: 300px; height: 400px;" class="produto-container">
-    <div class="card-produto">
-        <img class="img-produto" style="width: 300px; height: 250px;" src="{% static 'img/arroz.png' %}" alt="1kg arroz">
-        <article class="descricao-produto">
-            <h2 class="produto">Arroz 1kg</h2>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p class="preco" style="font-size: 1.5em;">R$7,99</p>
-        </article>
-        <button style="cursor: pointer;">Comprar</button>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/produtos.css' %}">
+</head>
+<body>
+    <main>
+        <h2>Produtos Disponíveis</h2>
+        <div class="produto-container">
+            <div class="card-produto">
+                <img class="img-produto" src="{% static 'img/arroz.png' %}" alt="1kg arroz">
+                <article class="descricao-produto">
+                    <h2 class="produto">Arroz 1kg</h2>
+                    <p class="preco">R$7,99</p>
+                </article>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -13,7 +13,7 @@
             <img src="{% static 'img/mercado-logo.jpg' %}" alt="">
             <nav class="links-container">
                 <ul>
-                    <a class="link" href="{% url 'index' %}">Home</a>
+                    <a class="link" href="{% url 'index' %}">Inicio</a>
                     {% for room in rooms %}
                         <li><a class="link" href="/{{room.name}}">{{room.name.capitalize}}</a></li>
                     {% endfor %}
