@@ -10,11 +10,22 @@ rooms = [
     {'id': 6, 'name': 'associados'}
 ]
 
+produtos = [
+    {'nome': 'arroz'},
+    {'nome': 'arroz'},
+    {'nome': 'arroz'},
+    {'nome': 'arroz'},
+    {'nome': 'arroz'}
+]
+    
+
+
 def index(request):
     return render(request, 'html/index.html', {'rooms': rooms})
 
 def produtos(request):
-    return render(request, 'html/produtos.html', {'rooms': rooms})
+    
+    return render(request, 'html/produtos.html', {'produtos': produtos})
 
 def ofertas(request):
     return render(request, 'html/ofertas.html', {'rooms': rooms})
