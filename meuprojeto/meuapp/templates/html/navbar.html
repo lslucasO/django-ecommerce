@@ -13,10 +13,10 @@
             <img src="{% static 'img/mercado-logo.jpg' %}" alt="">
             <nav class="links-container">
                 <ul>
-                    <a class="link" href="{% url 'index' %}">Inicio</a>
-                    {% for room in rooms %}
-                        <li><a class="link" href="/{{room.name}}">{{room.name.capitalize}}</a></li>
-                    {% endfor %}
+                    <li><a class="link" href="{% url 'index' %}">Inicio</a></li>
+                    <li><a class="link" href="{% url 'produtos' %}">Produtos</a></li>
+                    <li><a class="link" href="{% url 'carrinho' %}">Carrinho</a></li>
+                    <li><a class="link" href="{% url 'associados' %}">Associados</a></li>
                 </ul>
             </nav>
         </div>

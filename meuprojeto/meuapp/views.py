@@ -2,33 +2,18 @@ from django.shortcuts import render
 from .models import Associado
 
 # Create your views here.
-rooms = [
-    {'id': 2, 'name': 'produtos'},
-    {'id': 3, 'name': 'ofertas'},
-    {'id': 4, 'name': 'carrinho'},
-    {'id': 5, 'name': 'contato'},
-    {'id': 6, 'name': 'associados'}
-]
-
-produtos = [
-    {'nome': 'arroz'},
-    {'nome': 'arroz'},
-    {'nome': 'arroz'},
-    {'nome': 'arroz'},
-    {'nome': 'arroz'}
-]
-    
-
-
 def index(request):
-    return render(request, 'html/index.html', {'rooms': rooms})
+    return render(request, 'html/index.html')
 
 def produtos(request):
-    
-    return render(request, 'html/produtos.html', {'produtos': produtos})
+    return render(request, 'html/produtos.html', )
 
 def ofertas(request):
-    return render(request, 'html/ofertas.html', {'rooms': rooms})
+    return render(request, 'html/ofertas.html')
+
+def carrinho(request):
+    return render(request, 'html/carrinho.html')
+
 
 def associados(request):
     novo_associado = Associado()
