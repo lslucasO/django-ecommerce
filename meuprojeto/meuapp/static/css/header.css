@@ -6,6 +6,7 @@
 }
 
 header{
+    background-color: black;
     margin-bottom: 5px;
     padding: 10px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.292);
@@ -13,8 +14,9 @@ header{
 
 
 ul{
+    
     display: flex;
-    gap: 40px; 
+    gap: 50px; 
     list-style: none;
 }
 
@@ -26,6 +28,7 @@ a:hover{
     color: #0000EE;
 }
 
+
 nav{
     margin: auto;
 }
@@ -35,3 +38,7 @@ nav{
     display: flex;
 }
 
+.carrinho{
+    width: 50px; 
+    height: 40px; cursor: pointer;
+}
