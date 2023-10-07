@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from .models import Associado
 
 # Create your views here.
 def index(request):
@@ -16,15 +15,3 @@ def carrinho(request):
 
 def compra(request):
     return render(request, 'html/compra.html')
-
-def associados(request):
-    novo_associado = Associado()
-    novo_associado.cpf = request.POST.get('cpf')
-    novo_associado.email = request.POST.get('email')
-    novo_associado.save()
-    
-    associados = {
-        'associados': Associado.objects.all()
-    }
-    
-    return render(request, 'html/associados.html', associados)   
