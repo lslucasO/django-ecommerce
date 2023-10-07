@@ -6,6 +6,11 @@ body{
     background-color: #e7e7e76c;
 }
 
+main{
+    padding: 20px;
+}
+
+
 hr{
     opacity: 50%;
 }
@@ -17,6 +22,11 @@ input{
 }
 
 button{
+    padding: 5px;
+    border: none;
+    background-color: rgb(0, 170, 0);
+    color: white;
+    margin-top: 10px;
     width: 380px;
     cursor: pointer;
 }
@@ -26,8 +36,9 @@ section{
 }
 
 p{
-    margin-top: 8px;
-    margin-bottom: 8px;
+    font-size: 0.95em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .compra-container{
@@ -44,3 +55,6 @@ p{
     margin-bottom: 10px;
 }
 
+.dados-entrega-container{
+    margin-bottom: 10px;
+}
