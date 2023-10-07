@@ -85,6 +85,15 @@ button{
 
 .carrinho-row, .carrinho-list{
     display: flex;
-    gap: 110px;
+}
+
+.carrinho-row{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.carrinho-list{
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
