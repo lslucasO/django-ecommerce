@@ -14,6 +14,8 @@ def ofertas(request):
 def carrinho(request):
     return render(request, 'html/carrinho.html')
 
+def compra(request):
+    return render(request, 'html/compra.html')
 
 def associados(request):
     novo_associado = Associado()
