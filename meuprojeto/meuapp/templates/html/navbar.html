@@ -1,25 +1,14 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="{% static 'css/header.css' %}">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <img class="carrinho" src="" alt="">
-            <nav class="links-container">
-                <ul>
-                    <li><a class="link" href="{% url 'index' %}">Inicio</a></li>
-                    <li><a class="link" href="{% url 'produtos' %}">Produtos</a></li>
-                    <li><a class="link" href="{% url 'carrinho' %}">Carrinho</a></li>
-                    <li><a class="link" href="{% url 'associados' %}">Associados</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-</body>
-</html>
+<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<header>
+    <div class="header-container">
+        <nav class="links-container">
+            <ul>
+                <li><a class="link" href="{% url 'index' %}">Inicio</a></li>
+                <li><a class="link" href="{% url 'produtos' %}">Produtos</a></li>
+                <li><a class="link" href="{% url 'carrinho' %}">Carrinho</a></li>
+                <li><a class="link" href="{% url 'associados' %}">Associados</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
