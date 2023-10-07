@@ -15,7 +15,7 @@
         <div class="produto-container">
             {% for produto in produtos %}
             <div class="card-produto">
-                <img class="img-produto" src="{% static 'img/produtos/mesa-digitalizadora.webp' %}" alt="produto">
+                <img class="img-produto" src="{% static 'img/empty.png' %}" alt="produto">
                 <article class="descricao-produto">
                     <h3 class="produto">{{produto.nome}}</h2>
                     <p  class="preco">R${{produto.preco|floatformat:2}}</p>

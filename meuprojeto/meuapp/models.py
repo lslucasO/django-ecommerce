@@ -14,7 +14,7 @@ class Produto(models.Model):
     nome = models.CharField(max_length=255, null=True)
     preco = models.FloatField()
     has_product = models.BooleanField(default=False, null=True, blank=False)
-    # imagem do produto
+    imagem = models.ImageField(null=True, blank=True)
     
     def __str__(self):
         return self.nome
