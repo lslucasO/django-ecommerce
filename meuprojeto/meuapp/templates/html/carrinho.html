@@ -27,22 +27,23 @@
                 <div style="flex:1" class="info"><strong>Total</strong></div>
             </div>
             <hr>
+            {% for carrinho in carrinhos %}
             <div class="carrinho-list">
-                <figure style="flex:1.5"><img class="produto" src="{% static 'img/empty.png' %}" alt="">
+                <figure style="flex:1.5"><img class="produto" src="{{carrinho.produto.imageURL}}" alt="">
                 </figure>
-                <div style="flex:1.7" class="info">Produto 1</div>
-                <div style="flex:1"  class="info">R$10,99</div>
+                <div style="flex:1.7" class="info">{{carrinho.produto.nome}}</div>
+                <div style="flex:1"  class="info">R${{carrinho.produto.preco}}</div>
                 <div style="flex:1"  class="info">
                     <figure style=" margin-left: 5px;  display: flex; align-items: center; gap: 5px;" class="arrows">
                         1
                         <img style="margin-left: 5px;  width: 10px; height: 8px; display: block; cursor: pointer;"  src="{% static 'img/arrow-up.png' %}" alt="">
                         <img style="width: 10px; height: 8px; cursor: pointer;"  src="{% static 'img/arrow-down.png' %}" alt="">
                     </figure>
-                    
                 </div>
                 <div style="flex:1"  class="info">R$10,99</div>
             </div>
             <hr>
+            {% endfor %}
           
             
     </div>

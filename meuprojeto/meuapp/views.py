@@ -14,7 +14,9 @@ def ofertas(request):
     return render(request, 'html/ofertas.html')
 
 def carrinho(request):
-    return render(request, 'html/carrinho.html')
+    carrinhos = ItemPedido.objects.all()
+    context = {'carrinhos': carrinhos}
+    return render(request, 'html/carrinho.html', context=context)
 
 def compra(request):
     return render(request, 'html/compra.html')

@@ -18,6 +18,14 @@ class Produto(models.Model):
     
     def __str__(self):
         return self.nome
+    
+    @property
+    def imageURL(self):
+        try:
+            url = self.imagem.url
+        except:
+            url = ''
+        return url
 
 class Pedido(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL, blank=True, null=True)
