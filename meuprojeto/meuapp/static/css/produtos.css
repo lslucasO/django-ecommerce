@@ -1,7 +1,7 @@
 main{
     background-color: #e7e7e76c;
     padding: 20px;
-    height: 100%;
+    height: 1000px;
 }
 
 button{
@@ -9,25 +9,23 @@ button{
     cursor: pointer;
     width: 200px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #bb1523c4;
     color: white;
     border: none;
     transition: transform 0.5s;
 }
 
-button:hover{
-    transform: scale(1.02);
-}
 
 .produto{
     color: #595959;
 }
 
 .produto-container{
-    display: flex; 
+    justify-content: center;
+    display: grid; 
+    grid-template-columns: 350px 350px 350px;
     padding: 20px;   
-    width: 300px; height: 400px;
 }
 
 .card-produto{
@@ -35,15 +33,17 @@ button:hover{
     align-items: center;
     flex-direction: column;
     display: flex;
-    width: 260px;
+    width: 300px;
     height: 400px;
+    margin-bottom: 20px;
     padding: 15px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.364);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.275);
 }
 
 .img-produto{
+    margin-bottom: 10px;
     width: 250px; 
     height: 220px;
 }
