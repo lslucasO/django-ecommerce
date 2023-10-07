@@ -13,15 +13,18 @@
     <main>
         <h2>Produtos Disponíveis</h2>
         <div class="produto-container">
+            {% for produto in produtos %}
             <div class="card-produto">
-                <img class="img-produto" src="{% static 'img/arroz.png' %}" alt="1kg arroz">
+                <img class="img-produto" src="{% static 'img/empty.png' %}" alt="1kg arroz">
                 <article class="descricao-produto">
-                    <h3 class="produto">Arroz 1kg</h2>
-                    <p class="preco">R$7,99</p>
+                    <h3 class="produto">{{produto.nome}}</h2>
+                    <p style="font-size: 0.95em;" class="preco">R${{produto.preco}}</p>
                 </article>
                 <button>Adicionar ao Carrinho</button>
             </div>
+            {% endfor %}
         </div> 
+        
     </main>
 </body>
 </html>
