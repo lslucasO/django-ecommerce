@@ -10,14 +10,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AlterField(
-            model_name='associado',
-            name='cpf',
-            field=models.BigIntegerField(default=0),
-        ),
-        migrations.AlterField(
-            model_name='associado',
-            name='email',
-            field=models.EmailField(max_length=255),
-        ),
+
     ]
