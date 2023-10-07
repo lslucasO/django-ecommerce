@@ -1,2 +1,28 @@
 {% load static %}
 {% include 'html/navbar.html' %}
+<link rel="stylesheet" href="{% static 'css/compra.css' %}">
+<main>
+    <div class="compra-container">
+        <div class="name-email-container">
+            <form action="">
+                <input type="text" name="" id="" placeholder="Nome">
+                <input type="email" name="" id="" placeholder="Email">
+            </form>
+        </div>
+        <section>
+            <hr>
+            <p>Dados de Entrega:</p>
+            <hr>
+        </section>
+        <div class="dados-entrega-container">
+            <form action="">
+                <input type="text" name="" id="" placeholder="Endereço">
+                <input type="text" name="" id="" placeholder="Cidade">
+                <input type="text" name="" id="" placeholder="Estado">
+                <input type="text" name="" id="" placeholder="CEP">
+            </form>
+        </div>
+        <hr>
+        <button>Continuar</button>
+    </div>
+</main>

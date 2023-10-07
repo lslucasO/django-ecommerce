@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e7e7e76c;
+}
+
+hr{
+    opacity: 50%;
+}
+
+input{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+button{
+    width: 380px;
+    cursor: pointer;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.compra-container{
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.267);
+    background-color: white;
+    padding: 15px;
+    width: 400px;
+}
+
+.name-email-container{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
