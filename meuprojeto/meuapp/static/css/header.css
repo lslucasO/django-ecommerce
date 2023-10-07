@@ -6,16 +6,16 @@
 }
 
 header{
+    padding: 10px;
     background-color: white;
     margin-bottom: 5px;
-    padding: 10px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.292);
 }
 
 
 ul{
     display: flex;
-    gap: 50px; 
+    gap: 100px; 
     list-style: none;
 }
 
@@ -33,7 +33,19 @@ nav{
     margin: auto;
 }
 
+
 .header-container{
+    padding: 10px;
     align-items: center;
     display: flex;
+}
+
+.img-carrinho{
+    display: flex;
+
+}
+
+.carrinho{
+    cursor: pointer;
+    height: 25px;
 }

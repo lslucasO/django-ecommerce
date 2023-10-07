@@ -1,14 +1,15 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/header.css' %}">
+{% block content %}
 <header>
     <div class="header-container">
         <nav class="links-container">
             <ul>
                 <li><a class="link" href="{% url 'index' %}">Inicio</a></li>
                 <li><a class="link" href="{% url 'produtos' %}">Produtos</a></li>
-                <li><a class="link" href="{% url 'carrinho' %}">Carrinho</a></li>
-                <li><a class="link" href="{% url 'associados' %}">Associados</a></li>
+                <figure class="carrinho-container"><a href="{% url 'carrinho' %}"><img class="carrinho" src="{% static 'img/carrinho.png' %}" alt=""></a></figure>
             </ul>
         </nav>
     </div>
 </header>
+{% endblock content %}
