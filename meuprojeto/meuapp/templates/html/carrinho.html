@@ -14,7 +14,7 @@
         <hr>
         <div class="itens-compra-container">
             <p class="item">Itens: <strong>1</strong></p>
-            <p class="preco">Total: <strong>R$9,99</strong></p>
+            <p class="preco">Total: <strong>R$</strong></p>
             <a href="{% url 'compra' %}"><button class="btn-confirmar-compra">Prosseguir</button></a>
         </div>
     </div>
@@ -32,15 +32,15 @@
                 <figure style="flex:1.5"><img class="produto" src="{{carrinho.produto.imageURL}}" alt="">
                 </figure>
                 <div style="flex:1.7" class="info">{{carrinho.produto.nome}}</div>
-                <div style="flex:1"  class="info">R${{carrinho.produto.preco}}</div>
+                <div style="flex:1"  class="info">R${{carrinho.produto.preco|floatformat:2}}</div>
                 <div style="flex:1"  class="info">
                     <figure style=" margin-left: 5px;  display: flex; align-items: center; gap: 5px;" class="arrows">
-                        1
+                        {{carrinho.quantidade}}
                         <img style="margin-left: 5px;  width: 10px; height: 8px; display: block; cursor: pointer;"  src="{% static 'img/arrow-up.png' %}" alt="">
                         <img style="width: 10px; height: 8px; cursor: pointer;"  src="{% static 'img/arrow-down.png' %}" alt="">
                     </figure>
                 </div>
-                <div style="flex:1"  class="info">R$10,99</div>
+                <div style="flex:1"  class="info">R${{carrinho.totalPrice|floatformat:2}}</div>
             </div>
             <hr>
             {% endfor %}

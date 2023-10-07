@@ -42,6 +42,11 @@ class ItemPedido(models.Model):
     quantidade = models.IntegerField(default=0, null=True, blank=True)
     data_adicionada = models.DateTimeField(auto_now_add=True)
     
+    @property
+    def totalPrice(self):
+        total = self.produto.preco * self.quantidade
+        return total
+    
 class Entrega(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL, null=True)
     pedido = models.ForeignKey(Pedido, on_delete=models.SET_NULL, null=True)
