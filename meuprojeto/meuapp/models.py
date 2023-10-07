@@ -28,7 +28,7 @@ class Produto(models.Model):
         return url
 
 class Pedido(models.Model):
-    cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL, blank=True, null=True)
+    cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL,  blank=True, null=True)
     data_pedido = models.DateTimeField(auto_now_add=True)
     complete = models.BooleanField(default=False)
     id_transacao = models.CharField(max_length=100, null=True)
@@ -36,16 +36,20 @@ class Pedido(models.Model):
     def __str__(self):
         return str(self.id)
     
+     
+    
 class ItemPedido(models.Model):
     produto = models.ForeignKey(Produto, on_delete=models.SET_NULL, blank=True, null=True)
     pedido = models.ForeignKey(Pedido, on_delete=models.SET_NULL, blank=True, null=True)
     quantidade = models.IntegerField(default=0, null=True, blank=True)
     data_adicionada = models.DateTimeField(auto_now_add=True)
     
+    
     @property
     def totalPrice(self):
         total = self.produto.preco * self.quantidade
         return total
+    
     
 class Entrega(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL, null=True)
