@@ -4,9 +4,11 @@
 <main>
     <div class="container">
         <div class="btn-continuar-container">
-            <button class="btn-continuar">
-                <h3>Continuar Comprando</h3>
-            </button>
+            <a href="{% url 'index' %}">
+                <button class="btn-continuar">
+                    <h3>Continuar Comprando</h3>
+                </button>
+            </a>
         </div>
         <hr>
         <div class="itens-compra-container">
@@ -14,6 +16,24 @@
             <p class="preco">Total: <strong>R$9,99</strong></p>
             <button class="btn-confirmar-compra">Prosseguir</button>
         </div>
+    </div>
+    <div class="info-container">
+            <div class="carrinho-row">
+            
+                <figure><img class="produto" src="{% static 'img/empty.png' %}" alt="">
+                </figure>
+                <div class="info"><strong>Item</strong></div>
+                <div class="info"><strong>Preco</strong></div>
+                <div class="info"><strong>Quantidade</strong></div>
+                <div class="info"><strong>Total</strong></div>
+            </div>
+            <div class="carrinho-list">
+                <div class="info"><strong>Item</strong></div>
+                <div class="info"><strong>Preco</strong></div>
+                <div class="info"><strong>Quantidade</strong></div>
+                <div class="info"><strong>Total</strong></div>
+            </div>
+            <hr>
     </div>
 </main>
 

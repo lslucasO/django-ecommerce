@@ -44,9 +44,20 @@ button{
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.193);
     margin: auto;
     width: 800px;
-    
     border-radius: 10px;
     padding: 10px;
+    background-color: white;
+}
+
+.info-container{
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.193);
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    width: 800px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 120px;
     background-color: white;
 }
 
@@ -54,10 +65,26 @@ button{
     padding: 10px;
     gap: 30px;
     align-items: start;
-    height: 150px;
+    height: 100px;
     display: flex;
 }
 
 .preco{
     margin-right: 470px;
 }
+
+.produto{
+    width: 100px;
+    height: 50px;
+
+}
+
+.info{
+    font-size: 0.8em;
+}
+
+.carrinho-row, .carrinho-list{
+    display: flex;
+    gap: 110px;
+}
+
